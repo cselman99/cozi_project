@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Cozi Website</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="images/tabImage.png" width = 10px height = 5px>
+</head>
+
+<!--Begin JS implementation-->
+<script src = "templatingEngine.js"></script>
+
+<body>
+  <!--Create the Top Bar of Website with Logo-->
+  <div id = "topBar">
+    <img src = "images/cozi-logo.png" id = "coziImg" alt = "cozi-logo" height = 50px width = 100px>
+  </div>
+
+  <!--Create the Left-most Portion of Website-->
+  <div class = "leftBar">
+
+    <!--Create the text at top of divider-->
+    <div class = "leftText">
+      <strong><p><br/><br/>Please input your template in the text box below.</p></strong>
+    </div>
+
+    <!--Create the input field in the divider-->
+    <div class = "leftInput">
+
+      <!--Create the form in the divider-->
+      <form class="textInput">
+        <textarea id = "userInput" placeholder="Add template here"></textarea>
+      </form>
+      
+    </div>
+    <!--Create the dropdown button in the divider-->
+    
+    <!--Create the submit button in the divider-->
+    <div class = "Submit">
+      <button onclick="submit()" class = "subBtn">Submit</button>
+    </div>
+
+  </div>
+  
+  <!--Print the auto-response portion based off input-->
+  <div id = "responseBlock">
+    <h1>Output: </h1>
+    <p id = "outMessage"></p>
+  </div>
+
+  <!--Create footer-->
+  <div class = "footer">
+    <p>Created by Carter Selman, Fall 2019</p>
+  </div>
+  
+
+</body>

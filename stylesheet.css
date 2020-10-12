@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+}
+
+html, body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(177, 177, 177);
+  min-height: 700px;
+}
+
+/* Top Bar */
+#topBar{
+  background-color: #ffffff;
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  top: 0px;
+  position: absolute;
+}
+
+#coziImg{
+  margin: 5px;
+}
+
+/* Left Bar section */
+
+.leftBar{
+  width: 30%;
+  height: 550px;
+  position: absolute;
+  top: 100px;
+  margin: 1% 1% 0% 1%;
+  background-color: #3ab2cf;
+  float: left;
+}
+
+.leftText{
+  font-size: 18px;
+  height: 20%;
+  width: 96%;
+  position: absolute;
+  top: 0px;
+  padding: 2%;
+  background-color: white;
+  text-align: center;
+  color: #3ab2cf;
+}
+
+form{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+textarea{
+  left: 4.5%;
+  top: 25%;
+  height: 60%;
+  position: absolute;
+  width: 86%;
+  padding: 2%;
+  max-width: 86%;
+  max-height: 60%;
+  min-width: 86%;
+  min-height: 60%;
+}
+
+.Submit{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.subBtn{
+  background-color: #ffffff;
+  color: #3ab2cf;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 44px;
+  box-shadow: 0px 1px 1px 0px rgb(194, 194, 194) inset;
+}
+
+.subBtn:hover{
+  background-color: rgb(235, 166, 38);
+  color: white;
+}
+
+/* Output block */
+
+#responseBlock{
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  background-color: white;
+  width: 66%;
+  height: 550px;
+  float: right;
+  margin: 1% 1% 0% 0%;
+}
+
+#responseBlock h1, #outMessage{
+  margin: 3% 0% 0% 3%;
+  color: #3ab2cf;
+}
+
+/* Footer block */
+.footer{
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+  bottom: 0;
+  background-color: #3ab2cf;
+  color: white;
+  text-align: center;
+}
+
+
+/* RESIZING */
+@media only screen and (max-width: 600px){
+  .footer{
+    display: none;
+  }
+  .leftText{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  
+}
+
+@media only screen and (max-width: 1000px){
+  .leftText{
+    font-size: 14px;
+  }
+
+
+}
+@media only screen and (max-width: 700px){
+
+}
+
+
+@media only screen and (max-height: 700px){
+  .footer{
+    display: none;
+  }
+
+  .leftBar{
+    height: 550px;
+  }
+
+  #responseBlock{
+    height: 550px;
+  }
+}
